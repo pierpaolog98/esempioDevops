@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: esempioDevops-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: esempioDevops
+  template:
+    metadata:
+        labels:
+            app: esempioDevops
+    spec:
+        containers:
+        - name: esempioDevops
+          image: esempioDevops:latest
+          ports:
+          - containerPort: 8080
