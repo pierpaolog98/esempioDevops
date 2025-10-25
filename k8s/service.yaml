@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: esempioDevops-service
+  name: esempiodevops-service
 spec:
   selector:
-    app: esempioDevops
+    app: esempiodevops
   ports:
     - protocol: TCP
       port: 80
